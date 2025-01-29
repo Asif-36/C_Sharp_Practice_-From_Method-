@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text.RegularExpressions;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace HelloWorld
 {
@@ -21,52 +22,171 @@ namespace HelloWorld
 
             //Console.WriteLine("Sayad Md Asif\nBangla\n23\nReading Islamic Books");
 
-            string name;
-            int age;
+            /* string name;
+             int age;
 
-            Console.WriteLine("enter your name");
-            name = Console.ReadLine();
+             Console.WriteLine("enter your name");
+             name = Console.ReadLine();
 
-            Console.WriteLine("Enter your age");
-            age = Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine("Enter your age");
+             age = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"Hello! My Name is {name} , I am {age} years old");
-
-
-        
+             Console.WriteLine($"Hello! My Name is {name} , I am {age} years old"); */
 
 
 
-        /* Console.WriteLine("Enter number 1 to 10");
-         string input = Console.ReadLine() ?? "";
-         //input = input.Trim().ToLower();
 
-         int result = int.Parse(input);
-         while (true)
-         {
-             if (input == "quit")
+
+
+            /* Console.WriteLine("Enter Your desier age:");
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            if (age > 18)
+            {
+                Console.WriteLine("Adult");
+            }
+            else
+            {
+                Console.WriteLine("Minnor");
+            }
+            Console.WriteLine("Enter your marks:");
+            int marks = Convert.ToInt32(Console.ReadLine());
+
+            if (marks > 50)
+            {
+                Console.WriteLine("Pass");
+            }
+            else
+            {
+                Console.WriteLine("Fail");
+
+            }
+            Console.WriteLine("Enter your temp:");
+            double temperature = Convert.ToDouble(Console.ReadLine());
+
+            if (temperature > 30)
+            {
+                Console.WriteLine("Hot");
+            }
+            else
+            {
+                Console.WriteLine("Cold");
+            }
+            */
+
+
+
+
+
+            /* Console.WriteLine("Enter first number:");
+            int number1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter second number:");
+            int number2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter third number:");
+            int number3 = Convert.ToInt32(Console.ReadLine());
+
+            if (number1 % 2 == 0)
+            {
+                Console.WriteLine("First number is Even");
+            }
+            else
+            {
+                Console.WriteLine("First number is Odd");
+            }
+
+            if (number2 % 2 == 0)
+            {
+                Console.WriteLine("Second number is Even");
+            }
+            else
+            {
+                Console.WriteLine("Second number is Odd");
+            }
+
+            if (number3 % 2 == 0)
+            {
+                Console.WriteLine("Third number is Even");
+            }
+            else
+            {
+                Console.WriteLine("Third number is Odd");
+            }
+            */
+
+
+            for (int i = 1; i <= 50; i++)
+                if (i % 2 != 0)
+                {
+                    Console.WriteLine(i);
+                }
+
+            Console.WriteLine("OR");
+
+
+            for (int i = 1; i <= 50; i=i+2)
+                
+                {
+                    Console.WriteLine(i);
+                }
+
+
+            /*Console.WriteLine("NEXT");
+            int j = 0;
+            while (j < 101)
+            {
+                Console.WriteLine(j);
+               j = j+2;
+            }
+            */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Console.WriteLine("Enter number 1 to 10");
+             string input = Console.ReadLine() ?? "";
+             //input = input.Trim().ToLower();
+
+             int result = int.Parse(input);
+             while (true)
              {
-                 Console.WriteLine("GoodBuy");
-                 break;
-             }
+                 if (input == "quit")
+                 {
+                     Console.WriteLine("GoodBuy");
+                     break;
+                 }
 
-             if (!int.TryParse(input, out int result))
-             {
-                 Console.WriteLine("Your input is invalid, please try valid input");
-                 continue;
-             }
-             if (!(result >= 1 && result <= 10))
-             {
-                 Console.WriteLine($"Your input in not range");
-                 continue;
-             }
+                 if (!int.TryParse(input, out int result))
+                 {
+                     Console.WriteLine("Your input is invalid, please try valid input");
+                     continue;
+                 }
+                 if (!(result >= 1 && result <= 10))
+                 {
+                     Console.WriteLine($"Your input in not range");
+                     continue;
+                 }
 
-             int square = result * result;
-             Console.WriteLine($"Square of {result} = {square}");
+                 int square = result * result;
+                 Console.WriteLine($"Square of {result} = {square}");
 
 
-         }*/
-    }
+             }*/
+
+
+        }
         /*
 int number1, number2;
 
