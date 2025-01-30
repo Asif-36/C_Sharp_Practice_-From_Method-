@@ -114,9 +114,9 @@ namespace HelloWorld
                 Console.WriteLine("Third number is Odd");
             }
             */
+           
 
-
-            for (int i = 1; i <= 50; i++)
+            /*for (int i = 1; i <= 50; i++)
                 if (i % 2 != 0)
                 {
                     Console.WriteLine(i);
@@ -130,6 +130,31 @@ namespace HelloWorld
                 {
                     Console.WriteLine(i);
                 }
+            */
+
+
+            /*
+
+            string[] myFriends = { "Hasib", "Shamim", "Abid", "Bony" };
+            for (int i = 0; i < myFriends.Length; i++)
+            {
+                Console.WriteLine(myFriends[i]);
+            }
+
+            Console.WriteLine("Or");
+
+            string[] mySubjects = { "Airtificial Intellogence", "Database", "Web Application" };
+            foreach (string s in mySubjects)
+            {
+                Console.WriteLine(s);
+            }
+
+            */
+
+
+            List<string> myFriendsName = new List<string>();    
+
+            myFriendsName.Add("Asif");
 
 
             /*Console.WriteLine("NEXT");
