@@ -114,7 +114,7 @@ namespace HelloWorld
                 Console.WriteLine("Third number is Odd");
             }
             */
-           
+
 
             /*for (int i = 1; i <= 50; i++)
                 if (i % 2 != 0)
@@ -151,10 +151,77 @@ namespace HelloWorld
 
             */
 
+            Console.WriteLine("List");
 
             List<string> myFriendsName = new List<string>();    
 
             myFriendsName.Add("Asif");
+            myFriendsName.Add("Abdullah");
+            myFriendsName.Add("Shamim");
+            myFriendsName.Add("Rakib");
+            myFriendsName.Add("Bony");
+
+            foreach (string friendName in myFriendsName)
+            {
+                Console.WriteLine(friendName);
+            }
+
+
+
+            Console.WriteLine("Dictionary");
+
+            Dictionary<int,string> student = new Dictionary<int,string>();
+
+            student.Add(763, "Asif");
+            student.Add(775, "Shamim");
+            student.Add(757, "Abid");
+
+            foreach (KeyValuePair <int, string> KVP in student)
+            {
+                Console.WriteLine($"Student ID: {KVP.Key} Student Name: {KVP.Value}");
+            }
+
+            Console.WriteLine("Stack");
+
+
+
+            Stack<string> Books = new Stack<string>();  //Stack Toiri kora
+
+            Books.Push("C# Programming");   //Boi gula list koresi.
+            Books.Push("Data Structures");
+            Books.Push("Algorithm");
+
+          
+            foreach (string book in Books)
+            {
+                Console.WriteLine(book); //But print hobe stack er Last in first out onuzai. Alg>Data>C#. 
+            }
+
+            Console.WriteLine($"Top Books {Books.Pop()}");  //ekhan e arekta kotha, Pop() korar por Algorithm boita next e ar print hobe na ba list e thakbe na
+
+
+
+
+
+            Console.WriteLine("Queue");
+
+
+
+            Queue<string> queue = new Queue<string>();  // Queue তৈরি
+
+            // Queue-তে উপাদান যোগ করা
+            queue.Enqueue("Asif");
+            queue.Enqueue("Rahim");
+            queue.Enqueue("Karim");
+
+            // প্রথম উপাদান বের করা
+            Console.WriteLine("First Person: " + queue.Dequeue());  // Output: Asif
+
+            // Queue-এর সব উপাদান দেখানো
+            foreach (string person in queue)
+            {
+                Console.WriteLine(person);
+            }
 
 
             /*Console.WriteLine("NEXT");
